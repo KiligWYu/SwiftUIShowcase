@@ -24,6 +24,10 @@
 		151F12392BAE6D3C0085BC8B /* DotProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151F12382BAE6D3B0085BC8B /* DotProgressView.swift */; };
 		151F123C2BAEB7630085BC8B /* WheelPickerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151F123B2BAEB7630085BC8B /* WheelPickerScreen.swift */; };
 		151F123E2BAEB8FE0085BC8B /* WheelPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151F123D2BAEB8FE0085BC8B /* WheelPickerView.swift */; };
+		153424C52BD941B400334755 /* FetchMoreScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153424C42BD941B400334755 /* FetchMoreScreen.swift */; };
+		153424C72BD950FE00334755 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153424C62BD950FE00334755 /* Photo.swift */; };
+		153424C92BD9511900334755 /* PhotoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153424C82BD9511900334755 /* PhotoCardView.swift */; };
+		153424CC2BD9529F00334755 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 153424CB2BD9529F00334755 /* Kingfisher */; };
 		157D572B2BB4090700204564 /* DVDScreensaverScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157D572A2BB4090700204564 /* DVDScreensaverScreen.swift */; };
 		157D572D2BB40F6000204564 /* Color+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157D572C2BB40F6000204564 /* Color+Ex.swift */; };
 		15C3E46D2BAFF1C80066B4A8 /* SegmentedControlScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C3E46C2BAFF1C80066B4A8 /* SegmentedControlScreen.swift */; };
@@ -58,6 +62,9 @@
 		151F12382BAE6D3B0085BC8B /* DotProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotProgressView.swift; sourceTree = "<group>"; };
 		151F123B2BAEB7630085BC8B /* WheelPickerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelPickerScreen.swift; sourceTree = "<group>"; };
 		151F123D2BAEB8FE0085BC8B /* WheelPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelPickerView.swift; sourceTree = "<group>"; };
+		153424C42BD941B400334755 /* FetchMoreScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMoreScreen.swift; sourceTree = "<group>"; };
+		153424C62BD950FE00334755 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		153424C82BD9511900334755 /* PhotoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCardView.swift; sourceTree = "<group>"; };
 		157D572A2BB4090700204564 /* DVDScreensaverScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DVDScreensaverScreen.swift; sourceTree = "<group>"; };
 		157D572C2BB40F6000204564 /* Color+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ex.swift"; sourceTree = "<group>"; };
 		15C3E46C2BAFF1C80066B4A8 /* SegmentedControlScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlScreen.swift; sourceTree = "<group>"; };
@@ -78,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				153424CC2BD9529F00334755 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +131,7 @@
 				15F0D5B82BB697B40023E150 /* StackedCards */,
 				15F0D5BD2BBB018B0023E150 /* LoopingScrollView */,
 				15F0D5C42BBEF08B0023E150 /* Fluorescence */,
+				153424C32BD941A800334755 /* FetchMoreScreen */,
 				151F122C2BAE63780085BC8B /* Utility */,
 				151F12102BAC89740085BC8B /* Assets.xcassets */,
 				151F12122BAC89740085BC8B /* Preview Content */,
@@ -185,6 +194,16 @@
 				151F123D2BAEB8FE0085BC8B /* WheelPickerView.swift */,
 			);
 			path = HorizontalWheelPicker;
+			sourceTree = "<group>";
+		};
+		153424C32BD941A800334755 /* FetchMoreScreen */ = {
+			isa = PBXGroup;
+			children = (
+				153424C42BD941B400334755 /* FetchMoreScreen.swift */,
+				153424C82BD9511900334755 /* PhotoCardView.swift */,
+				153424C62BD950FE00334755 /* Photo.swift */,
+			);
+			path = FetchMoreScreen;
 			sourceTree = "<group>";
 		};
 		157D57292BB408F600204564 /* DVDScreensaver */ = {
@@ -259,6 +278,7 @@
 			);
 			name = SwiftUIShowcase;
 			packageProductDependencies = (
+				153424CB2BD9529F00334755 /* Kingfisher */,
 			);
 			productName = SwiftUIShowcase;
 			productReference = 151F12092BAC89720085BC8B /* SwiftUIShowcase.app */;
@@ -289,6 +309,7 @@
 			);
 			mainGroup = 151F12002BAC89720085BC8B;
 			packageReferences = (
+				153424CA2BD9529F00334755 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 151F120A2BAC89720085BC8B /* Products */;
 			projectDirPath = "";
@@ -359,11 +380,14 @@
 				157D572D2BB40F6000204564 /* Color+Ex.swift in Sources */,
 				15C3E46D2BAFF1C80066B4A8 /* SegmentedControlScreen.swift in Sources */,
 				151F122E2BAE63970085BC8B /* TrailingIconLabelStyle.swift in Sources */,
+				153424C52BD941B400334755 /* FetchMoreScreen.swift in Sources */,
 				15E7B4232BB541B4003D2C9C /* PagingIndicator.swift in Sources */,
+				153424C72BD950FE00334755 /* Photo.swift in Sources */,
 				15F0D5BC2BB6988C0023E150 /* Card.swift in Sources */,
 				151F123E2BAEB8FE0085BC8B /* WheelPickerView.swift in Sources */,
 				15C3E46F2BAFFE7B0066B4A8 /* SegmentedControl.swift in Sources */,
 				151F12342BAE693A0085BC8B /* NeumorphicStyle.swift in Sources */,
+				153424C92BD9511900334755 /* PhotoCardView.swift in Sources */,
 				15E7B4212BB53E07003D2C9C /* AnimatedPageIndicatorScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -582,6 +606,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		153424CA2BD9529F00334755 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		153424CB2BD9529F00334755 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 153424CA2BD9529F00334755 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 151F12012BAC89720085BC8B /* Project object */;
 }

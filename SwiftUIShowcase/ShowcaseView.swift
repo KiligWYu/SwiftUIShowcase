@@ -21,6 +21,7 @@ struct ShowcaseView: View {
         NavigationLink { StackedCardsScreen()          } label: { Text("Stacked Cards") }
         NavigationLink { LoopingScrollViewScreen()     } label: { Text("Looping Scrollview") }
         NavigationLink { FluorescenceScreen()          } label: { Text("Fluorescence") }
+        NavigationLink { FetchMoreScreen()             } label: { Text("JSON Parsing With Pagination") }
       }
       .navigationTitle("SwiftUI Showcase")
     }
