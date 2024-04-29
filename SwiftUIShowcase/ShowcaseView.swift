@@ -23,6 +23,7 @@ struct ShowcaseView: View {
         NavigationLink { FluorescenceScreen()          } label: { Text("Fluorescence") }
         NavigationLink { FetchMoreScreen()             } label: { Text("JSON Parsing With Pagination") }
         NavigationLink { RangeSliderScreen()           } label: { Text("Range Slider") }
+        NavigationLink { HeroAnimationScreen()         } label: { Text("Hero Effect") }
       }
       .navigationTitle("SwiftUI Showcase")
     }

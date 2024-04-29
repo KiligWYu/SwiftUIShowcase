@@ -11,7 +11,9 @@ import SwiftUI
 struct SwiftUIShowcaseApp: App {
   var body: some Scene {
     WindowGroup {
-      ShowcaseView()
+      HeroWrapper {
+        ShowcaseView()
+      }
     }
   }
 }
