@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1508488A2BB1640800B42D11 /* 3DTextCharacterFlipScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150848892BB1640800B42D11 /* 3DTextCharacterFlipScreen.swift */; };
+		1513E25E2BE0D68E004040DD /* SlideToUnlockScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1513E25D2BE0D68E004040DD /* SlideToUnlockScreen.swift */; };
 		151F120D2BAC89720085BC8B /* SwiftUIShowcaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151F120C2BAC89720085BC8B /* SwiftUIShowcaseApp.swift */; };
 		151F120F2BAC89720085BC8B /* ShowcaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151F120E2BAC89720085BC8B /* ShowcaseView.swift */; };
 		151F12112BAC89740085BC8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 151F12102BAC89740085BC8B /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 
 /* Begin PBXFileReference section */
 		150848892BB1640800B42D11 /* 3DTextCharacterFlipScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3DTextCharacterFlipScreen.swift; sourceTree = "<group>"; };
+		1513E25D2BE0D68E004040DD /* SlideToUnlockScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideToUnlockScreen.swift; sourceTree = "<group>"; };
 		151F12092BAC89720085BC8B /* SwiftUIShowcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIShowcase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		151F120C2BAC89720085BC8B /* SwiftUIShowcaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIShowcaseApp.swift; sourceTree = "<group>"; };
 		151F120E2BAC89720085BC8B /* ShowcaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowcaseView.swift; sourceTree = "<group>"; };
@@ -108,6 +110,14 @@
 			path = 3DTextCharacterFlip;
 			sourceTree = "<group>";
 		};
+		1513E25C2BE0D67C004040DD /* SlideToUnlock */ = {
+			isa = PBXGroup;
+			children = (
+				1513E25D2BE0D68E004040DD /* SlideToUnlockScreen.swift */,
+			);
+			path = SlideToUnlock;
+			sourceTree = "<group>";
+		};
 		151F12002BAC89720085BC8B = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +152,7 @@
 				153424C32BD941A800334755 /* FetchMoreScreen */,
 				1550323C2BDBE22A007E07B8 /* RangeSlider */,
 				152988332BDE1F0700907D9B /* HeroAnimation */,
+				1513E25C2BE0D67C004040DD /* SlideToUnlock */,
 				151F122C2BAE63780085BC8B /* Utility */,
 				151F12102BAC89740085BC8B /* Assets.xcassets */,
 				151F12122BAC89740085BC8B /* Preview Content */,
@@ -377,7 +388,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/zsh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"/opt/homebrew/bin:$PATH\"\n\nif which swiftlint > /dev/null; then\n  swiftlint --fix && swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint --fix && swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -386,6 +397,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1513E25E2BE0D68E004040DD /* SlideToUnlockScreen.swift in Sources */,
 				151F12242BAC8E550085BC8B /* NeumorphicView.swift in Sources */,
 				15F0D5C62BBEF09F0023E150 /* FluorescenceScreen.swift in Sources */,
 				1550323E2BDBE235007E07B8 /* RangeSliderScreen.swift in Sources */,

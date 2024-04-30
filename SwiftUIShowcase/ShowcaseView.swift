@@ -24,6 +24,7 @@ struct ShowcaseView: View {
         NavigationLink { FetchMoreScreen()             } label: { Text("JSON Parsing With Pagination") }
         NavigationLink { RangeSliderScreen()           } label: { Text("Range Slider") }
         NavigationLink { HeroAnimationScreen()         } label: { Text("Hero Effect") }
+        NavigationLink { SlideToUnlockScreen()         } label: { Text("Slide To Unlock") }
       }
       .navigationTitle("SwiftUI Showcase")
     }
