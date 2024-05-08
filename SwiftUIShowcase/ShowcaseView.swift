@@ -25,6 +25,7 @@ struct ShowcaseView: View {
         NavigationLink { RangeSliderScreen()           } label: { Text("Range Slider") }
         NavigationLink { HeroAnimationScreen()         } label: { Text("Hero Effect") }
         NavigationLink { SlideToUnlockScreen()         } label: { Text("Slide To Unlock") }
+        NavigationLink { HueRotationEffectScreen()     } label: { Text("Hue Rotation Effect") }
       }
       .navigationTitle("SwiftUI Showcase")
     }
