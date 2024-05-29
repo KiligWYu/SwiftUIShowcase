@@ -36,6 +36,8 @@
 		157D572B2BB4090700204564 /* DVDScreensaverScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157D572A2BB4090700204564 /* DVDScreensaverScreen.swift */; };
 		157D572D2BB40F6000204564 /* Color+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157D572C2BB40F6000204564 /* Color+Ex.swift */; };
 		157DD9A72BEB62CB00987E9D /* HueRotationEffectScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157DD9A62BEB62CB00987E9D /* HueRotationEffectScreen.swift */; };
+		158568BE2C07672B00B54D47 /* FlipClockScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158568BD2C07672B00B54D47 /* FlipClockScreen.swift */; };
+		158568C02C0777A600B54D47 /* FlipClockTextEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158568BF2C0777A600B54D47 /* FlipClockTextEffectView.swift */; };
 		15C3E46D2BAFF1C80066B4A8 /* SegmentedControlScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C3E46C2BAFF1C80066B4A8 /* SegmentedControlScreen.swift */; };
 		15C3E46F2BAFFE7B0066B4A8 /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C3E46E2BAFFE7B0066B4A8 /* SegmentedControl.swift */; };
 		15CA41C32BEDFE830067745D /* CustomViewTransitionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CA41C22BEDFE830067745D /* CustomViewTransitionScreen.swift */; };
@@ -80,6 +82,8 @@
 		157D572A2BB4090700204564 /* DVDScreensaverScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DVDScreensaverScreen.swift; sourceTree = "<group>"; };
 		157D572C2BB40F6000204564 /* Color+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ex.swift"; sourceTree = "<group>"; };
 		157DD9A62BEB62CB00987E9D /* HueRotationEffectScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HueRotationEffectScreen.swift; sourceTree = "<group>"; };
+		158568BD2C07672B00B54D47 /* FlipClockScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipClockScreen.swift; sourceTree = "<group>"; };
+		158568BF2C0777A600B54D47 /* FlipClockTextEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipClockTextEffectView.swift; sourceTree = "<group>"; };
 		15C3E46C2BAFF1C80066B4A8 /* SegmentedControlScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlScreen.swift; sourceTree = "<group>"; };
 		15C3E46E2BAFFE7B0066B4A8 /* SegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
 		15CA41C22BEDFE830067745D /* CustomViewTransitionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewTransitionScreen.swift; sourceTree = "<group>"; };
@@ -159,6 +163,7 @@
 				1513E25C2BE0D67C004040DD /* SlideToUnlock */,
 				157DD9A52BEB62BA00987E9D /* HueRotationEffect */,
 				15CA41C12BEDFE760067745D /* CustomViewTransition */,
+				158568BC2C07671900B54D47 /* FlipClock */,
 				151F122C2BAE63780085BC8B /* Utility */,
 				151F12102BAC89740085BC8B /* Assets.xcassets */,
 				151F12122BAC89740085BC8B /* Preview Content */,
@@ -265,6 +270,15 @@
 				157DD9A62BEB62CB00987E9D /* HueRotationEffectScreen.swift */,
 			);
 			path = HueRotationEffect;
+			sourceTree = "<group>";
+		};
+		158568BC2C07671900B54D47 /* FlipClock */ = {
+			isa = PBXGroup;
+			children = (
+				158568BD2C07672B00B54D47 /* FlipClockScreen.swift */,
+				158568BF2C0777A600B54D47 /* FlipClockTextEffectView.swift */,
+			);
+			path = FlipClock;
 			sourceTree = "<group>";
 		};
 		15C3E46B2BAFF1AF0066B4A8 /* SegmentedControl */ = {
@@ -432,6 +446,7 @@
 				15F0D5C32BBB03290023E150 /* LoopingScrollView.swift in Sources */,
 				151F12362BAE69DB0085BC8B /* NeumorphicAsyncButton.swift in Sources */,
 				15F0D5C12BBB01F50023E150 /* LoopingScrollViewModel.swift in Sources */,
+				158568BE2C07672B00B54D47 /* FlipClockScreen.swift in Sources */,
 				152988352BDE1F1300907D9B /* HeroAnimationScreen.swift in Sources */,
 				15F0D5BF2BBB01E50023E150 /* LoopingScrollViewScreen.swift in Sources */,
 				15DEFCE02BCFB5E000F6C9EA /* BlurEaseOutModifier.swift in Sources */,
@@ -446,6 +461,7 @@
 				15CA41C32BEDFE830067745D /* CustomViewTransitionScreen.swift in Sources */,
 				1529883D2BDE9B6900907D9B /* Hero.swift in Sources */,
 				151F122E2BAE63970085BC8B /* TrailingIconLabelStyle.swift in Sources */,
+				158568C02C0777A600B54D47 /* FlipClockTextEffectView.swift in Sources */,
 				153424C52BD941B400334755 /* FetchMoreScreen.swift in Sources */,
 				15E7B4232BB541B4003D2C9C /* PagingIndicator.swift in Sources */,
 				153424C72BD950FE00334755 /* Photo.swift in Sources */,
