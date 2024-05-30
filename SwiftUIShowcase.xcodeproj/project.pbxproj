@@ -32,6 +32,8 @@
 		153424C92BD9511900334755 /* PhotoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153424C82BD9511900334755 /* PhotoCardView.swift */; };
 		153424CC2BD9529F00334755 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 153424CB2BD9529F00334755 /* Kingfisher */; };
 		154543282BDC067F00CB571B /* RangeSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154543272BDC067F00CB571B /* RangeSliderView.swift */; };
+		154889652C08AB0D00A9A3D0 /* HackerTextEffectScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154889642C08AB0D00A9A3D0 /* HackerTextEffectScreen.swift */; };
+		154889672C08CE6600A9A3D0 /* HackerTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154889662C08CE6600A9A3D0 /* HackerTextView.swift */; };
 		1550323E2BDBE235007E07B8 /* RangeSliderScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1550323D2BDBE235007E07B8 /* RangeSliderScreen.swift */; };
 		157D572B2BB4090700204564 /* DVDScreensaverScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157D572A2BB4090700204564 /* DVDScreensaverScreen.swift */; };
 		157D572D2BB40F6000204564 /* Color+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157D572C2BB40F6000204564 /* Color+Ex.swift */; };
@@ -78,6 +80,8 @@
 		153424C62BD950FE00334755 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		153424C82BD9511900334755 /* PhotoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCardView.swift; sourceTree = "<group>"; };
 		154543272BDC067F00CB571B /* RangeSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSliderView.swift; sourceTree = "<group>"; };
+		154889642C08AB0D00A9A3D0 /* HackerTextEffectScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerTextEffectScreen.swift; sourceTree = "<group>"; };
+		154889662C08CE6600A9A3D0 /* HackerTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerTextView.swift; sourceTree = "<group>"; };
 		1550323D2BDBE235007E07B8 /* RangeSliderScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSliderScreen.swift; sourceTree = "<group>"; };
 		157D572A2BB4090700204564 /* DVDScreensaverScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DVDScreensaverScreen.swift; sourceTree = "<group>"; };
 		157D572C2BB40F6000204564 /* Color+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ex.swift"; sourceTree = "<group>"; };
@@ -164,6 +168,7 @@
 				157DD9A52BEB62BA00987E9D /* HueRotationEffect */,
 				15CA41C12BEDFE760067745D /* CustomViewTransition */,
 				158568BC2C07671900B54D47 /* FlipClock */,
+				154889632C08AB0100A9A3D0 /* HackerTextEffect */,
 				151F122C2BAE63780085BC8B /* Utility */,
 				151F12102BAC89740085BC8B /* Assets.xcassets */,
 				151F12122BAC89740085BC8B /* Preview Content */,
@@ -245,6 +250,15 @@
 				153424C62BD950FE00334755 /* Photo.swift */,
 			);
 			path = FetchMoreScreen;
+			sourceTree = "<group>";
+		};
+		154889632C08AB0100A9A3D0 /* HackerTextEffect */ = {
+			isa = PBXGroup;
+			children = (
+				154889642C08AB0D00A9A3D0 /* HackerTextEffectScreen.swift */,
+				154889662C08CE6600A9A3D0 /* HackerTextView.swift */,
+			);
+			path = HackerTextEffect;
 			sourceTree = "<group>";
 		};
 		1550323C2BDBE22A007E07B8 /* RangeSlider */ = {
@@ -458,11 +472,13 @@
 				151F12282BAC8E550085BC8B /* WeatherView.swift in Sources */,
 				157D572D2BB40F6000204564 /* Color+Ex.swift in Sources */,
 				15C3E46D2BAFF1C80066B4A8 /* SegmentedControlScreen.swift in Sources */,
+				154889672C08CE6600A9A3D0 /* HackerTextView.swift in Sources */,
 				15CA41C32BEDFE830067745D /* CustomViewTransitionScreen.swift in Sources */,
 				1529883D2BDE9B6900907D9B /* Hero.swift in Sources */,
 				151F122E2BAE63970085BC8B /* TrailingIconLabelStyle.swift in Sources */,
 				158568C02C0777A600B54D47 /* FlipClockTextEffectView.swift in Sources */,
 				153424C52BD941B400334755 /* FetchMoreScreen.swift in Sources */,
+				154889652C08AB0D00A9A3D0 /* HackerTextEffectScreen.swift in Sources */,
 				15E7B4232BB541B4003D2C9C /* PagingIndicator.swift in Sources */,
 				153424C72BD950FE00334755 /* Photo.swift in Sources */,
 				157DD9A72BEB62CB00987E9D /* HueRotationEffectScreen.swift in Sources */,

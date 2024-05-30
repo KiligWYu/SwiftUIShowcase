@@ -28,6 +28,7 @@ struct ShowcaseView: View {
         NavigationLink { HueRotationEffectScreen()     } label: { Text("Hue Rotation Effect") }
         NavigationLink { CustomViewTransitionScreen()  } label: { Text("Custom View Transition") }
         NavigationLink { FlipClockScreen()             } label: { Text("Flip Clock") }
+        NavigationLink { HackerTextEffectScreen()      } label: { Text("Hacker Text Effect") }
       }
       .navigationTitle("SwiftUI Showcase")
     }

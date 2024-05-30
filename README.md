@@ -17,6 +17,7 @@
 - [Hue Rotation Effect](#hue-rotation-effect)
 - [Custom View Transition](#custom-view-transition)
 - [Flip Clock](#flip-clock)
+- [Hacker Text Effect](#hacker-text-effect)
 
 ## Neumorphism
 
@@ -102,3 +103,8 @@
 
 * [Flip Clock Text Effect - SwiftUI - iOS 17](https://www.youtube.com/watch?v=Lekoc7QS-K4)<br>
 ![Flip Clock Text Effect](https://cdn.jsdelivr.net/gh/KiligWYu/Pics/2024/202405292314647.gif)
+
+## Hacker Text Effect
+
+* [Hacker Text Effect](https://www.youtube.com/watch?v=T5aUgq8GKnA)<br>
+![Hacker Text Effect](https://cdn.jsdelivr.net/gh/KiligWYu/Pics/2024/202405302317981.gif)
