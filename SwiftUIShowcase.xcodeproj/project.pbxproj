@@ -27,6 +27,9 @@
 		151F123E2BAEB8FE0085BC8B /* WheelPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151F123D2BAEB8FE0085BC8B /* WheelPickerView.swift */; };
 		152988352BDE1F1300907D9B /* HeroAnimationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152988342BDE1F1300907D9B /* HeroAnimationScreen.swift */; };
 		1529883D2BDE9B6900907D9B /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1529883C2BDE9B6900907D9B /* Hero.swift */; };
+		152B32AA2C0F1CE100F00E98 /* WaveScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152B32A62C0F1CE100F00E98 /* WaveScreen.swift */; };
+		152B32AB2C0F1CE100F00E98 /* WaveShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152B32A72C0F1CE100F00E98 /* WaveShape.swift */; };
+		152B32AC2C0F1CE100F00E98 /* WaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152B32A82C0F1CE100F00E98 /* WaveView.swift */; };
 		153424C52BD941B400334755 /* FetchMoreScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153424C42BD941B400334755 /* FetchMoreScreen.swift */; };
 		153424C72BD950FE00334755 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153424C62BD950FE00334755 /* Photo.swift */; };
 		153424C92BD9511900334755 /* PhotoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153424C82BD9511900334755 /* PhotoCardView.swift */; };
@@ -76,6 +79,9 @@
 		151F123D2BAEB8FE0085BC8B /* WheelPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelPickerView.swift; sourceTree = "<group>"; };
 		152988342BDE1F1300907D9B /* HeroAnimationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroAnimationScreen.swift; sourceTree = "<group>"; };
 		1529883C2BDE9B6900907D9B /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		152B32A62C0F1CE100F00E98 /* WaveScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaveScreen.swift; sourceTree = "<group>"; };
+		152B32A72C0F1CE100F00E98 /* WaveShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaveShape.swift; sourceTree = "<group>"; };
+		152B32A82C0F1CE100F00E98 /* WaveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaveView.swift; sourceTree = "<group>"; };
 		153424C42BD941B400334755 /* FetchMoreScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMoreScreen.swift; sourceTree = "<group>"; };
 		153424C62BD950FE00334755 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		153424C82BD9511900334755 /* PhotoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCardView.swift; sourceTree = "<group>"; };
@@ -169,6 +175,7 @@
 				15CA41C12BEDFE760067745D /* CustomViewTransition */,
 				158568BC2C07671900B54D47 /* FlipClock */,
 				154889632C08AB0100A9A3D0 /* HackerTextEffect */,
+				152B32A92C0F1CE100F00E98 /* Wave */,
 				151F122C2BAE63780085BC8B /* Utility */,
 				151F12102BAC89740085BC8B /* Assets.xcassets */,
 				151F12122BAC89740085BC8B /* Preview Content */,
@@ -240,6 +247,16 @@
 				1529883C2BDE9B6900907D9B /* Hero.swift */,
 			);
 			path = HeroAnimation;
+			sourceTree = "<group>";
+		};
+		152B32A92C0F1CE100F00E98 /* Wave */ = {
+			isa = PBXGroup;
+			children = (
+				152B32A62C0F1CE100F00E98 /* WaveScreen.swift */,
+				152B32A72C0F1CE100F00E98 /* WaveShape.swift */,
+				152B32A82C0F1CE100F00E98 /* WaveView.swift */,
+			);
+			path = Wave;
 			sourceTree = "<group>";
 		};
 		153424C32BD941A800334755 /* FetchMoreScreen */ = {
@@ -461,7 +478,9 @@
 				151F12362BAE69DB0085BC8B /* NeumorphicAsyncButton.swift in Sources */,
 				15F0D5C12BBB01F50023E150 /* LoopingScrollViewModel.swift in Sources */,
 				158568BE2C07672B00B54D47 /* FlipClockScreen.swift in Sources */,
+				152B32AB2C0F1CE100F00E98 /* WaveShape.swift in Sources */,
 				152988352BDE1F1300907D9B /* HeroAnimationScreen.swift in Sources */,
+				152B32AC2C0F1CE100F00E98 /* WaveView.swift in Sources */,
 				15F0D5BF2BBB01E50023E150 /* LoopingScrollViewScreen.swift in Sources */,
 				15DEFCE02BCFB5E000F6C9EA /* BlurEaseOutModifier.swift in Sources */,
 				151F123C2BAEB7630085BC8B /* WheelPickerScreen.swift in Sources */,
@@ -480,6 +499,7 @@
 				153424C52BD941B400334755 /* FetchMoreScreen.swift in Sources */,
 				154889652C08AB0D00A9A3D0 /* HackerTextEffectScreen.swift in Sources */,
 				15E7B4232BB541B4003D2C9C /* PagingIndicator.swift in Sources */,
+				152B32AA2C0F1CE100F00E98 /* WaveScreen.swift in Sources */,
 				153424C72BD950FE00334755 /* Photo.swift in Sources */,
 				157DD9A72BEB62CB00987E9D /* HueRotationEffectScreen.swift in Sources */,
 				15F0D5BC2BB6988C0023E150 /* Card.swift in Sources */,
@@ -619,10 +639,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIShowcase/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 74SUX6L6JA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
@@ -654,10 +675,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIShowcase/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 74SUX6L6JA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";

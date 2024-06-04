@@ -88,7 +88,7 @@ struct FlipClockTextEffectView: View {
 
       guard oldValue != newValue else { return }
 
-      withAnimation(.easeInOut(duration: animationDuration), 
+      withAnimation(.easeInOut(duration: animationDuration),
                     completionCriteria: .logicallyComplete) {
         rotation = -180
       } completion: {

@@ -18,6 +18,7 @@
 - [Custom View Transition](#custom-view-transition)
 - [Flip Clock](#flip-clock)
 - [Hacker Text Effect](#hacker-text-effect)
+- [Wave](#wave)
 
 ## Neumorphism
 
@@ -108,3 +109,7 @@
 
 * [Hacker Text Effect](https://www.youtube.com/watch?v=T5aUgq8GKnA)<br>
 ![Hacker Text Effect](https://cdn.jsdelivr.net/gh/KiligWYu/Pics/2024/202405302317981.gif)
+
+## Wave
+
+![Wave](https://cdn.jsdelivr.net/gh/KiligWYu/Pics/2024/202406042125670.gif)
