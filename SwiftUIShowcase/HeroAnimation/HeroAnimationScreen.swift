@@ -16,7 +16,7 @@ struct Item: Identifiable {
 
 // MARK: -
 
-var items: [Item] = [
+let items: [Item] = [
   .init(title: "Book Icon", color: .red, symbol: "book.fill"),
   .init(title: "Stack Icon", color: .blue, symbol: "square.stack.3d.up"),
   .init(title: "Rectangle Icon", color: .orange, symbol: "rectangle.portrait")

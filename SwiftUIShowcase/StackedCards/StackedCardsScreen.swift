@@ -32,7 +32,7 @@ struct StackedCardsScreen: View {
                 .fill(card.color.gradient)
                 .padding(.horizontal, 65)
                 .frame(width: size.width)
-                .visualEffect { content, geometryProxy in
+                .visualEffect { [isRotationEnabled] content, geometryProxy in
                   content
                     .scaleEffect(scale(geometryProxy), anchor: .trailing)
                     .rotationEffect(rotation(geometryProxy, rotation: isRotationEnabled ? 5 : 0))
@@ -71,12 +71,12 @@ struct StackedCardsScreen: View {
     }
   }
 
-  private func minX(_ proxy: GeometryProxy) -> CGFloat {
+  private nonisolated func minX(_ proxy: GeometryProxy) -> CGFloat {
     let minX = proxy.frame(in: .scrollView(axis: .horizontal)).minX
     return minX < 0 ? 0 : -minX
   }
 
-  private func progress(_ proxy: GeometryProxy, limit: CGFloat = 2) -> CGFloat {
+  private nonisolated func progress(_ proxy: GeometryProxy, limit: CGFloat = 2) -> CGFloat {
     let maxX = proxy.frame(in: .scrollView(axis: .horizontal)).maxX
     let width = proxy.bounds(of: .scrollView(axis: .horizontal))?.width ?? 0
     let progress = maxX / width - 1.0
@@ -84,15 +84,15 @@ struct StackedCardsScreen: View {
     return cappedProgress
   }
 
-  private func scale(_ proxy: GeometryProxy, scale: CGFloat = 0.1) -> CGFloat {
+  private nonisolated func scale(_ proxy: GeometryProxy, scale: CGFloat = 0.1) -> CGFloat {
     1 - (progress(proxy) * scale)
   }
 
-  private func excessMinX(_ proxy: GeometryProxy, offset: CGFloat = 10) -> CGFloat {
+  private nonisolated func excessMinX(_ proxy: GeometryProxy, offset: CGFloat = 10) -> CGFloat {
     progress(proxy) * offset
   }
 
-  private func rotation(_ proxy: GeometryProxy, rotation: CGFloat = 5) -> Angle {
+  private nonisolated func rotation(_ proxy: GeometryProxy, rotation: CGFloat = 5) -> Angle {
     Angle(degrees: progress(proxy) * rotation)
   }
 }

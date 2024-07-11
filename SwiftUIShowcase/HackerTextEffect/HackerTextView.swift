@@ -47,17 +47,16 @@ struct HackerTextView: View {
     for index in text.indices {
       let delay = CGFloat.random(in: 0...duration)
       var timerDuration: CGFloat = 0
-      let timer = Timer.scheduledTimer(withTimeInterval: speed, repeats: true) { timer in
-        if currentID != animationID {
-          timer.invalidate()
-        } else {
+      let timer = Timer.scheduledTimer(withTimeInterval: speed, repeats: true) { _ in
+        MainActor.assumeIsolated {
+          guard currentID == animationID else { return }
+
           timerDuration += speed
           if timerDuration >= delay {
             if text.indices.contains(index) {
               let actualCharacter = text[index]
               replaceCharacter(at: index, character: actualCharacter)
             }
-            timer.invalidate()
           } else {
             guard let randomCharacter = characters.randomElement() else { return }
             replaceCharacter(at: index, character: randomCharacter)
@@ -66,6 +65,10 @@ struct HackerTextView: View {
       }
 
       timer.fire()
+
+      DispatchQueue.main.asyncAfter(deadline: .now() + duration) {
+        timer.invalidate()
+      }
     }
   }
 

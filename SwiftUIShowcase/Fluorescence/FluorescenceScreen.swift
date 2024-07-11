@@ -178,21 +178,23 @@ struct FluorescenceScreen: View {
     let vibrationThreshold: CGFloat = 0.01
     var lastVibrationProgress: CGFloat = 0
 
-    timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true, block: { [self] timer in
-      self.progress += increment
-      increment += acceleration
+    timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { [self] _ in
+      MainActor.assumeIsolated {
+        self.progress += increment
+        increment += acceleration
 
-      if self.progress >= lastVibrationProgress + vibrationThreshold {
-        feedbackGenerator.impactOccurred()
-        lastVibrationProgress = self.progress
-      }
+        if self.progress >= lastVibrationProgress + vibrationThreshold {
+          feedbackGenerator.impactOccurred()
+          lastVibrationProgress = self.progress
+        }
 
-      if progress >= 1 {
-        timer.invalidate()
-        self.progress = 1
-        self.isProgressCompleted = true
+        if progress >= 1 {
+          self.timer?.invalidate()
+          self.progress = 1
+          self.isProgressCompleted = true
+        }
       }
-    })
+    }
   }
 
   private func resetProgress() {

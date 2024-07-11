@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-struct WaveShape: Shape, Animatable {
+@MainActor
+struct WaveShape: Shape, @preconcurrency Animatable {
   var time: CGFloat
   var amplitude: CGFloat
   var wavelength: CGFloat
