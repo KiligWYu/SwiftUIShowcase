@@ -27,8 +27,7 @@ struct HeroWrapper<Content: View>: View {
       /// Finding Active Scene
       if let windowScene = scene as? UIWindowScene,
          scene.activationState == .foregroundActive,
-         overlayWindow == nil
-      {
+         overlayWindow == nil {
         let rootController = UIHostingController(rootView: HeroLayerView().environment(heroModel))
         rootController.view.frame = windowScene.screen.bounds
         rootController.view.backgroundColor = .clear
@@ -67,8 +66,7 @@ struct SourceView<Content: View>: View {
       })
       .onPreferenceChange(AnchorKey.self, perform: { value in
         if let index, heroModel.info[index].isActive,
-           heroModel.info[index].sourceAnchor == nil
-        {
+           heroModel.info[index].sourceAnchor == nil {
           heroModel.info[index].sourceAnchor = value[id]
         }
       })
@@ -109,8 +107,7 @@ struct DestinationView<Content: View>: View {
       })
       .onPreferenceChange(AnchorKey.self, perform: { value in
         if let index, heroModel.info[index].isActive,
-           !heroModel.info[index].hideView
-        {
+           !heroModel.info[index].hideView {
           heroModel.info[index].destinationAnchor = value["\(id)_DESTINATION"]
         }
       })
@@ -212,8 +209,7 @@ private struct HeroLayerView: View {
           if let sourceAnchor = info.sourceAnchor,
              let destinationAnchor = info.destinationAnchor,
              let layerView = info.layerView,
-             !info.hideView
-          {
+             !info.hideView {
             /// Retrieving Bounds data from the anchor values
             let sRect = proxy[sourceAnchor]
             let dRect = proxy[destinationAnchor]

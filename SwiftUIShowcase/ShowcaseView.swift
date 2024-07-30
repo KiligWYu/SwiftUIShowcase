@@ -30,6 +30,9 @@ struct ShowcaseView: View {
         NavigationLink { FlipClockScreen()             } label: { Text("Flip Clock") }
         NavigationLink { HackerTextEffectScreen()      } label: { Text("Hacker Text Effect") }
         NavigationLink { WaveScreen()                  } label: { Text("Wave") }
+        if #available(iOS 18.0, *) {
+          NavigationLink { AnimatedMeshScreen()        } label: { Text("Animated Mesh") }
+        }
       }
       .navigationTitle("SwiftUI Showcase")
     }
