@@ -32,6 +32,7 @@ struct ShowcaseView: View {
         NavigationLink { WaveScreen()                  } label: { Text("Wave") }
         if #available(iOS 18.0, *) {
           NavigationLink { AnimatedMeshScreen()        } label: { Text("Animated Mesh") }
+          NavigationLink { TextRendererScreen()        } label: { Text("Text Renderer") }
         }
       }
       .navigationTitle("SwiftUI Showcase")

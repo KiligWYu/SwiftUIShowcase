@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1508488A2BB1640800B42D11 /* 3DTextCharacterFlipScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150848892BB1640800B42D11 /* 3DTextCharacterFlipScreen.swift */; };
 		1513E25E2BE0D68E004040DD /* SlideToUnlockScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1513E25D2BE0D68E004040DD /* SlideToUnlockScreen.swift */; };
+		151E87ED2C5BDF7600B3F447 /* TextRendererScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151E87EC2C5BDF7600B3F447 /* TextRendererScreen.swift */; };
 		151F120D2BAC89720085BC8B /* SwiftUIShowcaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151F120C2BAC89720085BC8B /* SwiftUIShowcaseApp.swift */; };
 		151F120F2BAC89720085BC8B /* ShowcaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151F120E2BAC89720085BC8B /* ShowcaseView.swift */; };
 		151F12112BAC89740085BC8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 151F12102BAC89740085BC8B /* Assets.xcassets */; };
@@ -38,6 +39,10 @@
 		154889652C08AB0D00A9A3D0 /* HackerTextEffectScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154889642C08AB0D00A9A3D0 /* HackerTextEffectScreen.swift */; };
 		154889672C08CE6600A9A3D0 /* HackerTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154889662C08CE6600A9A3D0 /* HackerTextView.swift */; };
 		1550323E2BDBE235007E07B8 /* RangeSliderScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1550323D2BDBE235007E07B8 /* RangeSliderScreen.swift */; };
+		155C82DC2C63C6610021FED6 /* ColorfulTextDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155C82DB2C63C6610021FED6 /* ColorfulTextDemo.swift */; };
+		155C82DE2C63C6940021FED6 /* AnimatedSineWaveDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155C82DD2C63C6940021FED6 /* AnimatedSineWaveDemo.swift */; };
+		155C82E02C63C6D50021FED6 /* ColorfulAttributeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155C82DF2C63C6D50021FED6 /* ColorfulAttributeDemo.swift */; };
+		156A0A0E2C63C81800E64682 /* BlurEffectDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156A0A0D2C63C81800E64682 /* BlurEffectDemo.swift */; };
 		157D572B2BB4090700204564 /* DVDScreensaverScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157D572A2BB4090700204564 /* DVDScreensaverScreen.swift */; };
 		157D572D2BB40F6000204564 /* Color+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157D572C2BB40F6000204564 /* Color+Ex.swift */; };
 		157DD9A72BEB62CB00987E9D /* HueRotationEffectScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157DD9A62BEB62CB00987E9D /* HueRotationEffectScreen.swift */; };
@@ -61,6 +66,7 @@
 /* Begin PBXFileReference section */
 		150848892BB1640800B42D11 /* 3DTextCharacterFlipScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3DTextCharacterFlipScreen.swift; sourceTree = "<group>"; };
 		1513E25D2BE0D68E004040DD /* SlideToUnlockScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideToUnlockScreen.swift; sourceTree = "<group>"; };
+		151E87EC2C5BDF7600B3F447 /* TextRendererScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRendererScreen.swift; sourceTree = "<group>"; };
 		151F12092BAC89720085BC8B /* SwiftUIShowcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIShowcase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		151F120C2BAC89720085BC8B /* SwiftUIShowcaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIShowcaseApp.swift; sourceTree = "<group>"; };
 		151F120E2BAC89720085BC8B /* ShowcaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowcaseView.swift; sourceTree = "<group>"; };
@@ -90,6 +96,10 @@
 		154889642C08AB0D00A9A3D0 /* HackerTextEffectScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerTextEffectScreen.swift; sourceTree = "<group>"; };
 		154889662C08CE6600A9A3D0 /* HackerTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerTextView.swift; sourceTree = "<group>"; };
 		1550323D2BDBE235007E07B8 /* RangeSliderScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSliderScreen.swift; sourceTree = "<group>"; };
+		155C82DB2C63C6610021FED6 /* ColorfulTextDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorfulTextDemo.swift; sourceTree = "<group>"; };
+		155C82DD2C63C6940021FED6 /* AnimatedSineWaveDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedSineWaveDemo.swift; sourceTree = "<group>"; };
+		155C82DF2C63C6D50021FED6 /* ColorfulAttributeDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorfulAttributeDemo.swift; sourceTree = "<group>"; };
+		156A0A0D2C63C81800E64682 /* BlurEffectDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurEffectDemo.swift; sourceTree = "<group>"; };
 		157D572A2BB4090700204564 /* DVDScreensaverScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DVDScreensaverScreen.swift; sourceTree = "<group>"; };
 		157D572C2BB40F6000204564 /* Color+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ex.swift"; sourceTree = "<group>"; };
 		157DD9A62BEB62CB00987E9D /* HueRotationEffectScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HueRotationEffectScreen.swift; sourceTree = "<group>"; };
@@ -138,6 +148,18 @@
 			path = SlideToUnlock;
 			sourceTree = "<group>";
 		};
+		151E87EB2C5BDF6400B3F447 /* TextRenderer */ = {
+			isa = PBXGroup;
+			children = (
+				151E87EC2C5BDF7600B3F447 /* TextRendererScreen.swift */,
+				155C82DB2C63C6610021FED6 /* ColorfulTextDemo.swift */,
+				155C82DD2C63C6940021FED6 /* AnimatedSineWaveDemo.swift */,
+				155C82DF2C63C6D50021FED6 /* ColorfulAttributeDemo.swift */,
+				156A0A0D2C63C81800E64682 /* BlurEffectDemo.swift */,
+			);
+			path = TextRenderer;
+			sourceTree = "<group>";
+		};
 		151F12002BAC89720085BC8B = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +181,7 @@
 			children = (
 				151F120C2BAC89720085BC8B /* SwiftUIShowcaseApp.swift */,
 				151F120E2BAC89720085BC8B /* ShowcaseView.swift */,
+				151E87EB2C5BDF6400B3F447 /* TextRenderer */,
 				158E63052C5938780035CC63 /* AnimatedMesh */,
 				151F121D2BAC8E550085BC8B /* Neumorphic */,
 				151F12222BAC8E550085BC8B /* WeatherCard */,
@@ -481,6 +504,7 @@
 				1550323E2BDBE235007E07B8 /* RangeSliderScreen.swift in Sources */,
 				15F0D5BA2BB697CB0023E150 /* StackedCardsScreen.swift in Sources */,
 				151F12262BAC8E550085BC8B /* HeaderView.swift in Sources */,
+				156A0A0E2C63C81800E64682 /* BlurEffectDemo.swift in Sources */,
 				151F120F2BAC89720085BC8B /* ShowcaseView.swift in Sources */,
 				1508488A2BB1640800B42D11 /* 3DTextCharacterFlipScreen.swift in Sources */,
 				151F12392BAE6D3C0085BC8B /* DotProgressView.swift in Sources */,
@@ -500,6 +524,7 @@
 				151F120D2BAC89720085BC8B /* SwiftUIShowcaseApp.swift in Sources */,
 				157D572B2BB4090700204564 /* DVDScreensaverScreen.swift in Sources */,
 				151F12252BAC8E550085BC8B /* CardView.swift in Sources */,
+				155C82E02C63C6D50021FED6 /* ColorfulAttributeDemo.swift in Sources */,
 				151F12282BAC8E550085BC8B /* WeatherView.swift in Sources */,
 				157D572D2BB40F6000204564 /* Color+Ex.swift in Sources */,
 				15C3E46D2BAFF1C80066B4A8 /* SegmentedControlScreen.swift in Sources */,
@@ -508,6 +533,7 @@
 				1529883D2BDE9B6900907D9B /* Hero.swift in Sources */,
 				151F122E2BAE63970085BC8B /* TrailingIconLabelStyle.swift in Sources */,
 				158568C02C0777A600B54D47 /* FlipClockTextEffectView.swift in Sources */,
+				155C82DC2C63C6610021FED6 /* ColorfulTextDemo.swift in Sources */,
 				153424C52BD941B400334755 /* FetchMoreScreen.swift in Sources */,
 				154889652C08AB0D00A9A3D0 /* HackerTextEffectScreen.swift in Sources */,
 				15E7B4232BB541B4003D2C9C /* PagingIndicator.swift in Sources */,
@@ -516,9 +542,11 @@
 				157DD9A72BEB62CB00987E9D /* HueRotationEffectScreen.swift in Sources */,
 				15F0D5BC2BB6988C0023E150 /* Card.swift in Sources */,
 				154543282BDC067F00CB571B /* RangeSliderView.swift in Sources */,
+				151E87ED2C5BDF7600B3F447 /* TextRendererScreen.swift in Sources */,
 				151F123E2BAEB8FE0085BC8B /* WheelPickerView.swift in Sources */,
 				15C3E46F2BAFFE7B0066B4A8 /* SegmentedControl.swift in Sources */,
 				151F12342BAE693A0085BC8B /* NeumorphicStyle.swift in Sources */,
+				155C82DE2C63C6940021FED6 /* AnimatedSineWaveDemo.swift in Sources */,
 				153424C92BD9511900334755 /* PhotoCardView.swift in Sources */,
 				15E7B4212BB53E07003D2C9C /* AnimatedPageIndicatorScreen.swift in Sources */,
 			);
